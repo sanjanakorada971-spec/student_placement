@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Student Dashboard | Student Placement</title>
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/dashboard.css">
+		<link rel="stylesheet" href="../css/student.css">
+	</head>
+	<body class="portal-page" data-portal="student" data-page="dashboard">
+		<div class="portal-app" id="portal-app">
+			<aside class="portal-sidebar" id="portal-sidebar" aria-label="Student navigation"></aside>
+			<div class="sidebar-overlay" data-sidebar-overlay></div>
+			<div class="portal-main">
+				<header class="portal-topbar" id="portal-topbar"></header>
+				<main class="page-content">
+					<div class="demo-banner">Demo workspace: student names, drives, application counts, and placement outcomes shown here are sample data.</div>
+					<div class="student-welcome">TUESDAY, SEPTEMBER 29, 2026 <span aria-hidden="true">·</span> Welcome back, <strong>Aanya</strong></div>
+					<header class="page-heading"><div><h1>Your placement overview</h1><p>Keep your applications and upcoming opportunities moving forward.</p></div><a class="action-button" href="drives.html">Explore drives <span aria-hidden="true">→</span></a></header>
+					<section class="metrics-grid" aria-label="Placement statistics">
+						<article class="metric-card"><span class="metric-accent" aria-hidden="true">D</span><p class="metric-label">Eligible drives</p><p class="metric-value">08</p><p class="metric-foot">3 new this week</p></article>
+						<article class="metric-card"><span class="metric-accent" aria-hidden="true">A</span><p class="metric-label">Applications</p><p class="metric-value">05</p><p class="metric-foot">2 in progress</p></article>
+						<article class="metric-card"><span class="metric-accent" aria-hidden="true">I</span><p class="metric-label">Interviews</p><p class="metric-value">02</p><p class="metric-foot">Next one in 3 days</p></article>
+						<article class="metric-card"><span class="metric-accent" aria-hidden="true">O</span><p class="metric-label">Offers</p><p class="metric-value">01</p><p class="metric-foot">Congratulations, Aanya</p></article>
+					</section>
+					<div class="content-grid section-block">
+						<section class="panel"><div class="panel-header"><div><h2>Recent placement drives</h2><p class="section-note">Opportunities matched to your profile</p></div><a href="drives.html">All drives →</a></div>
+							<div class="table-wrap"><table class="data-table"><thead><tr><th>COMPANY / ROLE</th><th>PACKAGE</th><th>DEADLINE</th><th>STATUS</th></tr></thead><tbody>
+								<tr><td><span class="table-primary">Northstar Systems</span><span class="table-secondary">Graduate Software Engineer</span></td><td>₹12.5 LPA</td><td>18 Oct</td><td><span class="status-badge info">Eligible</span></td></tr>
+								<tr><td><span class="table-primary">Vertex Analytics</span><span class="table-secondary">Data Analyst Associate</span></td><td>₹9.2 LPA</td><td>24 Oct</td><td><span class="status-badge warning">Applied</span></td></tr>
+								<tr><td><span class="table-primary">Asteron Consulting</span><span class="table-secondary">Technology Consultant</span></td><td>₹8.8 LPA</td><td>29 Oct</td><td><span class="status-badge info">Eligible</span></td></tr>
+							</tbody></table></div>
+						</section>
+						<section class="panel chart-panel"><div class="panel-header"><div><h2>Application status</h2><p class="section-note">Your current progress by stage</p></div></div>
+							<div class="panel-body"><div class="chart-wrap"><canvas id="applicationChart" aria-label="Doughnut chart of application statuses"></canvas><div class="chart-fallback" aria-hidden="true"><div><span style="height: 42%"></span><span style="height: 68%"></span><span style="height: 86%"></span><span style="height: 57%"></span><span style="height: 32%"></span></div><small>Applied · Shortlisted · Interview · Offer</small></div></div>
+								<div class="chart-legend"><span><i class="legend-blue"></i>In progress <b>3</b></span><span><i class="legend-green"></i>Offer <b>1</b></span><span><i class="legend-gray"></i>Closed <b>1</b></span></div>
+							</div>
+						</section>
+					</div>
+					<div class="content-grid section-block">
+						<section class="panel"><div class="panel-header"><h2>Upcoming interviews</h2><a href="applications.html">View applications →</a></div><div class="panel-body data-list">
+							<div class="data-list-row"><div><span class="table-primary">Vertex Analytics</span><span class="table-secondary">Technical interview · Online</span></div><span class="status-badge warning">Oct 02 · 10:30 AM</span></div>
+							<div class="data-list-row"><div><span class="table-primary">Northstar Systems</span><span class="table-secondary">Recruiter conversation · Campus</span></div><span class="status-badge info">Oct 06 · 2:00 PM</span></div>
+						</div></section>
+						<section class="panel"><div class="panel-header"><h2>Recent notifications</h2><a href="notifications.html">See all →</a></div><div class="panel-body data-list">
+							<div class="data-list-row"><div><span class="table-primary">Interview scheduled</span><span class="table-secondary">Vertex Analytics · 2 hours ago</span></div><span class="status-badge danger">New</span></div>
+							<div class="data-list-row"><div><span class="table-primary">Profile viewed by officer</span><span class="table-secondary">Placement office · Yesterday</span></div><span class="status-badge neutral">Read</span></div>
+						</div></section>
+					</div>
+					<p class="report-footnote">All figures and organizations are illustrative data for this frontend demo.</p>
+				</main>
+			</div>
+		</div>
+		<div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
+		<script src="../js/student.js" defer></script>
+	</body>
+</html>

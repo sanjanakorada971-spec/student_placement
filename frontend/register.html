@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create a student account | Student Placement</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+  </head>
+  <body class="auth-page">
+    <header class="auth-header">
+      <nav class="navigation page-width" aria-label="Main navigation">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">SP</span><span>Student <strong>Placement</strong></span></a>
+        <a class="auth-home-link" href="index.html">Back to home</a>
+      </nav>
+    </header>
+    <main class="auth-layout register-layout">
+      <aside class="auth-aside">
+        <div class="auth-aside-content">
+          <p class="eyebrow">START WITH A STRONG PROFILE</p>
+          <h1>Your next opportunity starts here.</h1>
+          <p>Build a profile that helps your placement team connect you with relevant opportunities and keep your progress visible.</p>
+        </div>
+        <div class="auth-aside-foot"><div><strong>One</strong><span>student profile</span></div><div><strong>Every</strong><span>placement update</span></div></div>
+      </aside>
+      <section class="auth-card register-card" aria-labelledby="register-title">
+        <p class="eyebrow section-eyebrow">STUDENT REGISTRATION</p>
+        <h2 id="register-title">Create your account</h2>
+        <p class="auth-intro">Enter your details to preview the student registration flow. This demo does not send data to a server.</p>
+        <p class="auth-message" id="register-message" role="status" aria-live="polite"></p>
+        <form id="register-form" novalidate>
+          <h3 class="form-section-title">Personal information <span>01</span></h3>
+          <div class="form-grid">
+            <div class="form-field"><label for="full-name">Full name</label><input id="full-name" name="fullName" autocomplete="name" placeholder="e.g. Aanya Sharma" required></div>
+            <div class="form-field"><label for="roll-number">Roll number</label><input id="roll-number" name="rollNumber" placeholder="e.g. CS2026-041" required></div>
+            <div class="form-field"><label for="register-email">University email</label><input id="register-email" name="email" type="email" autocomplete="email" placeholder="you@university.edu" required></div>
+            <div class="form-field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9]{8,15}" title="Enter 8 to 15 digits without spaces." placeholder="9876543210" required></div>
+            <div class="form-field"><label for="dob">Date of birth</label><input id="dob" name="dob" type="date" required></div>
+            <div class="form-field"><label for="department">Department</label><select id="department" name="department" required><option value="">Select department</option><option>Computer Science</option><option>Information Technology</option><option>Electronics & Communication</option><option>Mechanical Engineering</option><option>Electrical Engineering</option><option>Business Administration</option></select></div>
+          </div>
+
+          <h3 class="form-section-title">Academic information <span>02</span></h3>
+          <div class="form-grid">
+            <div class="form-field"><label for="year">Current year</label><select id="year" name="year" required><option value="">Select year</option><option>Second year</option><option>Third year</option><option>Fourth year</option></select></div>
+            <div class="form-field"><label for="cgpa">Current CGPA</label><input id="cgpa" name="cgpa" type="number" min="0" max="10" step="0.01" placeholder="e.g. 8.42" required></div>
+            <div class="form-field"><label for="backlogs">Active backlogs</label><input id="backlogs" name="backlogs" type="number" min="0" max="20" value="0" required></div>
+            <div class="form-field"><label for="graduation-year">Graduation year</label><select id="graduation-year" name="graduationYear" required><option value="">Select year</option><option>2026</option><option>2027</option><option>2028</option><option>2029</option></select></div>
+          </div>
+
+          <h3 class="form-section-title">Skills and resume <span>03</span></h3>
+          <div class="form-grid">
+            <div class="form-field"><label for="programming-skills">Programming skills</label><input id="programming-skills" name="programmingSkills" placeholder="Java, Python, SQL"></div>
+            <div class="form-field"><label for="technical-skills">Technical skills</label><input id="technical-skills" name="technicalSkills" placeholder="React, Git, AWS"></div>
+            <div class="form-field field-span-two"><label for="resume">Resume (PDF, DOC, DOCX)</label><input class="file-input" id="resume" name="resume" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"><small>Maximum file size: 5 MB. The file remains in this browser demo.</small></div>
+          </div>
+
+          <h3 class="form-section-title">Account security <span>04</span></h3>
+          <div class="form-grid">
+            <div class="form-field"><label for="register-password">Password</label><div class="password-control"><input id="register-password" name="password" type="password" minlength="8" autocomplete="new-password" placeholder="At least 8 characters" required><button class="password-toggle" type="button" data-password-toggle="register-password" aria-label="Show password">Show</button></div></div>
+            <div class="form-field"><label for="confirm-password">Confirm password</label><div class="password-control"><input id="confirm-password" name="confirmPassword" type="password" minlength="8" autocomplete="new-password" placeholder="Re-enter password" required><button class="password-toggle" type="button" data-password-toggle="confirm-password" aria-label="Show password">Show</button></div></div>
+          </div>
+          <div class="form-field"><label class="check-label"><input id="terms" name="terms" type="checkbox" required> I confirm that these details are accurate and agree to the placement portal terms.</label></div>
+          <button class="button button-primary auth-submit" type="submit">Create student account <span aria-hidden="true">→</span></button>
+          <p class="auth-switch">Already registered? <a class="inline-link" href="login.html">Sign in</a></p>
+          <p class="auth-demo-note">Demo only: registration details are stored locally in this browser for preview purposes.</p>
+        </form>
+      </section>
+    </main>
+    <p class="auth-footer">© 2026 Student Placement Management System · Frontend preview</p>
+    <script src="js/auth.js" defer></script>
+  </body>
+</html>

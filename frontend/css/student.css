@@ -1,0 +1,407 @@
+.student-welcome {
+	margin-bottom: 16px;
+	color: #6c7c8b;
+	font-size: 10px;
+}
+
+.student-welcome strong {
+	color: var(--blue-dark);
+}
+
+.student-drive-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 13px;
+}
+
+.student-drive-card {
+	padding: 17px;
+	border: 1px solid #e2e8ed;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.student-drive-top {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.student-drive-card h3 {
+	margin: 5px 0 6px;
+	font-size: 12px;
+}
+
+.student-drive-card .drive-company {
+	margin: 0;
+}
+
+.student-drive-facts {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 14px;
+	margin: 14px 0;
+	color: var(--muted);
+	font-size: 9px;
+}
+
+.student-drive-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	padding-top: 12px;
+	border-top: 1px solid #edf0f2;
+}
+
+.student-drive-footer small {
+	color: var(--muted);
+	font-size: 9px;
+}
+
+.profile-summary {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 21px;
+}
+
+.profile-avatar {
+	display: grid;
+	width: 66px;
+	 aspect-ratio: 1;
+	flex: 0 0 auto;
+	place-items: center;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	background: #dce8f4;
+	box-shadow: 0 0 0 1px #cfdae4;
+	color: var(--blue-dark);
+	font-family: Georgia, serif;
+	font-size: 20px;
+}
+
+.profile-summary h2 {
+	margin: 0 0 5px;
+	font-family: inherit;
+	font-size: 17px;
+}
+
+.profile-summary p {
+	margin: 0;
+	color: var(--muted);
+	font-size: 10px;
+}
+
+.profile-form-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0 16px;
+}
+
+.portal-field {
+	margin-bottom: 14px;
+}
+
+.portal-field label {
+	display: block;
+	margin-bottom: 6px;
+	color: #526274;
+	font-size: 9px;
+	font-weight: 700;
+}
+
+.portal-field input,
+.portal-field select,
+.portal-field textarea {
+	width: 100%;
+	min-height: 36px;
+	padding: 8px 10px;
+	border: 1px solid #dce3e9;
+	border-radius: 3px;
+	background: #fff;
+	color: var(--ink);
+	font: inherit;
+	font-size: 10px;
+}
+
+.portal-field input[readonly] {
+	background: #f8fafb;
+	color: #536579;
+}
+
+.skill-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 7px;
+}
+
+.skill-chip {
+	padding: 6px 9px;
+	border: 1px solid #dce6ef;
+	border-radius: 3px;
+	background: #f4f8fb;
+	color: #365c80;
+	font-size: 9px;
+	font-weight: 650;
+}
+
+.detail-list {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0 20px;
+}
+
+.detail-item {
+	padding: 12px 0;
+	border-bottom: 1px solid #edf0f2;
+}
+
+.detail-item span,
+.detail-item strong {
+	display: block;
+}
+
+.detail-item span {
+	margin-bottom: 5px;
+	color: var(--muted);
+	font-size: 9px;
+}
+
+.detail-item strong {
+	font-size: 10px;
+	font-weight: 650;
+}
+
+.application-progress {
+	display: flex;
+	min-width: 480px;
+	align-items: center;
+	margin: 15px 0 2px;
+}
+
+.progress-step {
+	position: relative;
+	display: grid;
+	flex: 1;
+	place-items: center;
+	color: #8b98a7;
+	font-size: 8px;
+	text-align: center;
+}
+
+.progress-step::before {
+	position: relative;
+	z-index: 1;
+	width: 12px;
+	height: 12px;
+	margin-bottom: 7px;
+	border: 2px solid #d9e1e8;
+	border-radius: 50%;
+	background: #fff;
+	content: "";
+}
+
+.progress-step:not(:last-child)::after {
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	width: 100%;
+	height: 2px;
+	background: #d9e1e8;
+	content: "";
+}
+
+.progress-step.is-done::before,
+.progress-step.is-current::before {
+	border-color: var(--blue);
+	background: var(--blue);
+}
+
+.progress-step.is-done::after {
+	background: var(--blue);
+}
+
+.progress-step.is-done,
+.progress-step.is-current {
+	color: var(--blue-dark);
+	font-weight: 700;
+}
+
+.notification-item {
+	display: grid;
+	grid-template-columns: 9px 1fr auto;
+	align-items: start;
+	gap: 12px;
+	padding: 15px 17px;
+	border-bottom: 1px solid #edf0f2;
+}
+
+.notification-item:last-child {
+	border-bottom: 0;
+}
+
+.notification-item.is-unread {
+	background: #f7fafe;
+}
+
+.notification-indicator {
+	width: 7px;
+	height: 7px;
+	margin-top: 4px;
+	border-radius: 50%;
+	background: transparent;
+}
+
+.is-unread .notification-indicator {
+	background: var(--blue);
+}
+
+.notification-item h3 {
+	margin: 0 0 4px;
+	font-size: 11px;
+}
+
+.notification-item p {
+	margin: 0;
+	color: var(--muted);
+	font-size: 10px;
+	line-height: 1.5;
+}
+
+.notification-item time {
+	color: #8290a0;
+	font-size: 9px;
+	white-space: nowrap;
+}
+
+.setting-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 15px 0;
+	border-bottom: 1px solid #edf0f2;
+}
+
+.setting-row:last-child {
+	border-bottom: 0;
+}
+
+.setting-row strong,
+.setting-row small {
+	display: block;
+}
+
+.setting-row strong {
+	font-size: 10px;
+}
+
+.setting-row small {
+	margin-top: 4px;
+	color: var(--muted);
+	font-size: 9px;
+}
+
+.setting-row input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+	accent-color: var(--blue);
+}
+
+.resume-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+	padding: 14px;
+	border: 1px dashed #cbd8e3;
+	border-radius: 3px;
+	background: #f8fafc;
+}
+
+.resume-box strong,
+.resume-box small {
+	display: block;
+}
+
+.resume-box strong {
+	font-size: 10px;
+}
+
+.resume-box small {
+	margin-top: 4px;
+	color: var(--muted);
+	font-size: 9px;
+}
+
+.drive-detail-list {
+	margin: 8px 0 20px;
+	padding-left: 18px;
+	color: var(--muted);
+	font-size: 11px;
+	line-height: 1.75;
+}
+
+.detail-section-title {
+	margin: 20px 0 8px;
+	font-size: 11px;
+}
+
+.detail-process {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 15px;
+}
+
+.detail-process article > span {
+	color: var(--coral);
+	font-size: 9px;
+	font-weight: 750;
+}
+
+.detail-process h3 {
+	margin: 8px 0 5px;
+	font-size: 10px;
+}
+
+.detail-process p {
+	margin: 0;
+	color: var(--muted);
+	font-size: 9px;
+	line-height: 1.5;
+}
+
+.profile-summary p strong {
+	color: #427c57;
+}
+
+@media (max-width: 950px) {
+	.student-drive-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 540px) {
+	.profile-form-grid,
+	.detail-list {
+		grid-template-columns: 1fr;
+	}
+
+	.profile-summary {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.notification-item {
+		grid-template-columns: 9px 1fr;
+	}
+
+	.notification-item time {
+		grid-column: 2;
+	}
+
+	.detail-process {
+		grid-template-columns: 1fr;
+	}
+}

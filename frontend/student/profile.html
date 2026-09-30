@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Profile | Student Placement</title>
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/dashboard.css">
+		<link rel="stylesheet" href="../css/student.css">
+	</head>
+	<body class="portal-page" data-portal="student" data-page="profile">
+		<div class="portal-app" id="portal-app"><aside class="portal-sidebar" id="portal-sidebar" aria-label="Student navigation"></aside><div class="sidebar-overlay" data-sidebar-overlay></div><div class="portal-main"><header class="portal-topbar" id="portal-topbar"></header>
+			<main class="page-content">
+				<div class="demo-banner">Sample student profile · Update details in this browser preview; changes are not submitted to an institution.</div>
+				<header class="page-heading"><div><h1>My profile</h1><p>Your profile helps the placement team identify relevant opportunities.</p></div><div class="button-row"><button class="action-button secondary" type="button" data-profile-edit>Edit profile</button><button class="action-button" type="submit" form="profile-form" data-profile-save disabled>Save changes</button></div></header>
+				<section class="panel profile-summary"><div class="profile-avatar" aria-hidden="true">AS</div><div><h2>Aanya Sharma</h2><p>CS2026-041 · Computer Science · Class of 2027</p><p>Profile completeness: <strong>92%</strong></p></div></section>
+				<form id="profile-form" data-profile-form>
+					<section class="panel section-block"><div class="panel-header"><h2>Personal information</h2></div><div class="panel-body profile-form-grid">
+						<div class="portal-field"><label for="profile-name">Full name</label><input id="profile-name" name="fullName" value="Aanya Sharma" readonly data-profile-field></div>
+						<div class="portal-field"><label for="profile-email">University email</label><input id="profile-email" name="email" type="email" value="aanya.sharma@northfield.edu" readonly data-profile-field></div>
+						<div class="portal-field"><label for="profile-phone">Phone</label><input id="profile-phone" name="phone" type="tel" value="+91 98765 43210" readonly data-profile-field></div>
+						<div class="portal-field"><label for="profile-location">Location</label><input id="profile-location" name="location" value="Pune, Maharashtra" readonly data-profile-field></div>
+					</div></section>
+					<section class="panel section-block"><div class="panel-header"><h2>Academic information</h2></div><div class="panel-body profile-form-grid">
+						<div class="portal-field"><label for="profile-roll">Roll number</label><input id="profile-roll" name="rollNumber" value="CS2026-041" readonly data-profile-field></div>
+						<div class="portal-field"><label for="profile-department">Department</label><input id="profile-department" name="department" value="Computer Science" readonly data-profile-field></div>
+						<div class="portal-field"><label for="profile-cgpa">Current CGPA</label><input id="profile-cgpa" name="cgpa" type="number" min="0" max="10" step="0.01" value="8.42" readonly data-profile-field></div>
+						<div class="portal-field"><label for="profile-backlogs">Active backlogs</label><input id="profile-backlogs" name="backlogs" type="number" min="0" value="0" readonly data-profile-field></div>
+					</div></section>
+				</form>
+				<div class="content-grid equal section-block">
+					<section class="panel"><div class="panel-header"><h2>Skills</h2></div><div class="panel-body"><div class="skill-list"><span class="skill-chip">Python</span><span class="skill-chip">Java</span><span class="skill-chip">SQL</span><span class="skill-chip">React</span><span class="skill-chip">Data structures</span><span class="skill-chip">Git</span></div><p class="section-note">Programming and technical skills shown are sample profile data.</p></div></section>
+					<section class="panel"><div class="panel-header"><h2>Resume</h2><span class="status-badge success">On file</span></div><div class="panel-body"><div class="resume-box"><div><strong>Aanya_Sharma_Resume.pdf</strong><small>Updated Sep 12, 2026 · 842 KB</small></div><label class="action-button secondary small" for="resume-upload">Replace resume<input id="resume-upload" type="file" accept=".pdf,.doc,.docx" hidden data-resume-upload></label></div></div></section>
+				</div>
+				<div class="content-grid equal section-block">
+					<section class="panel"><div class="panel-header"><h2>Projects</h2><span class="status-badge neutral">2 listed</span></div><div class="panel-body data-list"><div class="data-list-row"><div><span class="table-primary">Campus Connect</span><span class="table-secondary">Student community web app · React, Node.js</span></div><span class="status-badge info">2026</span></div><div class="data-list-row"><div><span class="table-primary">Transit Demand Forecast</span><span class="table-secondary">Time-series model · Python, Pandas</span></div><span class="status-badge info">2025</span></div></div></section>
+					<section class="panel"><div class="panel-header"><h2>Certifications</h2><span class="status-badge neutral">2 listed</span></div><div class="panel-body data-list"><div class="data-list-row"><div><span class="table-primary">Cloud Practitioner Essentials</span><span class="table-secondary">Amazon Web Services</span></div><span class="status-badge success">Verified</span></div><div class="data-list-row"><div><span class="table-primary">SQL for Data Analysis</span><span class="table-secondary">Northfield Learning Hub</span></div><span class="status-badge success">Verified</span></div></div></section>
+				</div>
+			</main>
+		</div></div>
+		<div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+		<script src="../js/student.js" defer></script>
+	</body>
+</html>

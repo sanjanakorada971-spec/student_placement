@@ -1,0 +1,160 @@
+.officer-metrics {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.officer-table-actions {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.company-cell {
+	display: flex;
+	align-items: center;
+	gap: 9px;
+}
+
+.company-cell .company-monogram {
+	width: 30px;
+	font-size: 12px;
+}
+
+.officer-form-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0 16px;
+}
+
+.officer-form-grid .field-wide {
+	grid-column: 1 / -1;
+}
+
+.branch-fieldset {
+	min-width: 0;
+	padding: 0;
+	border: 0;
+}
+
+.branch-fieldset legend {
+	margin-bottom: 8px;
+	color: #526274;
+	font-size: 9px;
+	font-weight: 700;
+}
+
+.branch-options {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 15px;
+}
+
+.branch-options label {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	color: var(--muted);
+	font-size: 9px;
+}
+
+.branch-options input {
+	accent-color: var(--blue);
+}
+
+.result-score {
+	font-variant-numeric: tabular-nums;
+	font-weight: 700;
+}
+
+.report-kpi-grid {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	gap: 11px;
+}
+
+.report-kpi {
+	padding: 15px;
+	border: 1px solid #e2e8ed;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.report-kpi span,
+.report-kpi strong {
+	display: block;
+}
+
+.report-kpi span {
+	min-height: 26px;
+	color: var(--muted);
+	font-size: 9px;
+}
+
+.report-kpi strong {
+	margin-top: 7px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.branch-progress {
+	display: grid;
+	grid-template-columns: 110px 1fr 42px;
+	align-items: center;
+	gap: 12px;
+	padding-block: 10px;
+	font-size: 9px;
+}
+
+.branch-progress-track {
+	height: 6px;
+	border-radius: 5px;
+	background: #e8edf2;
+}
+
+.branch-progress-track span {
+	display: block;
+	height: 100%;
+	border-radius: inherit;
+	background: var(--blue);
+}
+
+.report-footnote {
+	margin: 15px 0 0;
+	color: var(--muted);
+	font-size: 9px;
+}
+
+@media (max-width: 1100px) {
+	.report-kpi-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 760px) {
+	.officer-metrics {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.report-kpi-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 540px) {
+	.officer-form-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.officer-form-grid .field-wide {
+		grid-column: auto;
+	}
+
+	.report-kpi-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.branch-progress {
+		grid-template-columns: 82px 1fr 36px;
+		gap: 8px;
+	}
+}

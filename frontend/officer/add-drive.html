@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Add Placement Drive | Student Placement</title><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/dashboard.css"><link rel="stylesheet" href="../css/officer.css"></head>
+  <body class="portal-page" data-portal="officer" data-page="drives">
+    <div class="portal-app" id="portal-app"><aside class="portal-sidebar" id="portal-sidebar" aria-label="Officer navigation"></aside><div class="sidebar-overlay" data-sidebar-overlay></div><div class="portal-main"><header class="portal-topbar" id="portal-topbar"></header>
+      <main class="page-content">
+        <nav class="section-note" aria-label="Breadcrumb"><a href="drives.html">Placement drives</a> / Add drive</nav>
+        <header class="page-heading section-block"><div><h1>Create a placement drive</h1><p>Set the role, eligibility, important dates, and selection stages.</p></div><a class="action-button secondary" href="drives.html">Cancel</a></header>
+        <div class="demo-banner">This sample drive is stored in this browser only. Review all criteria with the employer before publishing.</div>
+        <form class="panel section-block" data-drive-form>
+          <div class="panel-header"><div><h2>Drive details</h2><p class="section-note">Add accurate role and recruitment information.</p></div></div>
+          <div class="panel-body officer-form-grid">
+            <div class="portal-field"><label for="drive-company">Company *</label><select id="drive-company" name="company" required><option value="">Select company</option><option>Northstar Systems</option><option>Vertex Analytics</option><option>Asteron Consulting</option><option>Meridian Bank</option><option>Other / new partner</option></select></div>
+            <div class="portal-field"><label for="drive-role">Job role *</label><input id="drive-role" name="role" required placeholder="e.g. Graduate Software Engineer"></div>
+            <div class="portal-field field-wide"><label for="drive-description">Job description *</label><textarea class="control-textarea" id="drive-description" name="description" required placeholder="Responsibilities, team context, and role expectations"></textarea></div>
+            <div class="portal-field"><label for="drive-package">Package (LPA) *</label><input id="drive-package" name="package" type="number" min="0" step="0.1" required placeholder="e.g. 12.5"></div>
+            <div class="portal-field"><label for="drive-location">Location *</label><input id="drive-location" name="location" required placeholder="City / Hybrid / Remote"></div>
+            <div class="portal-field"><label for="drive-cgpa">Minimum CGPA *</label><input id="drive-cgpa" name="minimumCgpa" type="number" min="0" max="10" step="0.01" required value="7.00"></div>
+            <div class="portal-field"><label for="drive-backlogs">Maximum active backlogs *</label><input id="drive-backlogs" name="maximumBacklogs" type="number" min="0" required value="0"></div>
+            <fieldset class="portal-field field-wide branch-fieldset"><legend>Eligible branches *</legend><div class="branch-options"><label><input type="checkbox" name="branches" value="Computer Science"> Computer Science</label><label><input type="checkbox" name="branches" value="Information Technology"> Information Technology</label><label><input type="checkbox" name="branches" value="Electronics & Communication"> Electronics & Communication</label><label><input type="checkbox" name="branches" value="Mechanical Engineering"> Mechanical Engineering</label><label><input type="checkbox" name="branches" value="Business Administration"> Business Administration</label></div></fieldset>
+            <div class="portal-field field-wide"><label for="drive-skills">Required skills</label><input id="drive-skills" name="skills" placeholder="Java, SQL, communication"></div>
+            <div class="portal-field"><label for="drive-deadline">Application deadline *</label><input id="drive-deadline" name="deadline" type="date" required></div>
+            <div class="portal-field"><label for="drive-date">Drive date *</label><input id="drive-date" name="driveDate" type="date" required></div>
+            <div class="portal-field field-wide"><label for="drive-selection">Selection process *</label><textarea class="control-textarea" id="drive-selection" name="selectionProcess" required placeholder="Online assessment, technical interview, HR interview"></textarea></div>
+          </div>
+          <div class="panel-body button-row"><button class="action-button" type="submit">Save draft drive</button><button class="action-button secondary" type="button" data-demo-action="Drive preview">Preview drive</button><a class="action-button secondary" href="drives.html">Cancel</a></div>
+        </form>
+      </main>
+    </div></div>
+    <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div><script src="../js/officer.js" defer></script>
+  </body>
+</html>

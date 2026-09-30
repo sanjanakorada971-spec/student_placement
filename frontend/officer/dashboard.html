@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Officer Dashboard | Student Placement</title>
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/dashboard.css">
+		<link rel="stylesheet" href="../css/officer.css">
+	</head>
+	<body class="portal-page" data-portal="officer" data-page="dashboard">
+		<div class="portal-app" id="portal-app"><aside class="portal-sidebar" id="portal-sidebar" aria-label="Officer navigation"></aside><div class="sidebar-overlay" data-sidebar-overlay></div><div class="portal-main"><header class="portal-topbar" id="portal-topbar"></header>
+			<main class="page-content">
+				<div class="demo-banner">Administrative demo dashboard · All totals, students, companies, and outcomes are illustrative sample data.</div>
+				<header class="page-heading"><div><h1>Placement operations</h1><p>Northfield University · Academic year 2026 / 27</p></div><a class="action-button" href="add-drive.html">Create a drive <span aria-hidden="true">+</span></a></header>
+				<section class="metrics-grid officer-metrics" aria-label="Placement metrics">
+					<article class="metric-card"><span class="metric-accent">S</span><p class="metric-label">Total students</p><p class="metric-value">1,248</p><p class="metric-foot">Across 8 departments</p></article>
+					<article class="metric-card"><span class="metric-accent">C</span><p class="metric-label">Registered companies</p><p class="metric-value">52</p><p class="metric-foot">11 new this year</p></article>
+					<article class="metric-card"><span class="metric-accent">D</span><p class="metric-label">Active drives</p><p class="metric-value">12</p><p class="metric-foot">4 closing this month</p></article>
+					<article class="metric-card"><span class="metric-accent">A</span><p class="metric-label">Applications</p><p class="metric-value">684</p><p class="metric-foot">Across active drives</p></article>
+					<article class="metric-card"><span class="metric-accent">P</span><p class="metric-label">Students placed</p><p class="metric-value">536</p><p class="metric-foot">+8.4% from last year</p></article>
+					<article class="metric-card"><span class="metric-accent">%</span><p class="metric-label">Placement rate</p><p class="metric-value">74.3%</p><p class="metric-foot">Eligible graduating cohort</p></article>
+				</section>
+				<div class="content-grid equal section-block">
+					<section class="panel chart-panel"><div class="panel-header"><div><h2>Branch-wise placements</h2><p class="section-note">Placed students by department</p></div></div><div class="panel-body"><div class="chart-wrap"><canvas id="branchChart" aria-label="Branch-wise student placement chart"></canvas><div class="chart-fallback" aria-hidden="true"><div><span style="height: 78%"></span><span style="height: 62%"></span><span style="height: 49%"></span><span style="height: 38%"></span><span style="height: 29%"></span></div><small>CS&nbsp;&nbsp; IT&nbsp;&nbsp; ECE&nbsp;&nbsp; ME&nbsp;&nbsp; EE</small></div></div></div></section>
+					<section class="panel chart-panel"><div class="panel-header"><div><h2>Company-wise selections</h2><p class="section-note">Top hiring partners this season</p></div></div><div class="panel-body"><div class="chart-wrap"><canvas id="companyChart" aria-label="Company-wise selections chart"></canvas><div class="chart-fallback" aria-hidden="true"><div><span style="height: 70%"></span><span style="height: 56%"></span><span style="height: 48%"></span><span style="height: 33%"></span><span style="height: 24%"></span></div><small>Northstar&nbsp;&nbsp; Vertex&nbsp;&nbsp; Asteron&nbsp;&nbsp; Meridian</small></div></div></div></section>
+				</div>
+				<section class="panel chart-panel section-block"><div class="panel-header"><div><h2>Monthly placement trend</h2><p class="section-note">Sample offers confirmed during the 2026 / 27 cycle</p></div><span class="status-badge info">Through September</span></div><div class="panel-body"><div class="chart-wrap"><canvas id="trendChart" aria-label="Monthly placement trend chart"></canvas><div class="chart-fallback wide" aria-hidden="true"><div><span style="height: 22%"></span><span style="height: 35%"></span><span style="height: 29%"></span><span style="height: 57%"></span><span style="height: 68%"></span><span style="height: 88%"></span><span style="height: 73%"></span></div><small>Mar&nbsp;&nbsp; Apr&nbsp;&nbsp; May&nbsp;&nbsp; Jun&nbsp;&nbsp; Jul&nbsp;&nbsp; Aug&nbsp;&nbsp; Sep</small></div></div></div></section>
+				<div class="content-grid section-block">
+					<section class="panel"><div class="panel-header"><div><h2>Recent applications</h2><p class="section-note">Latest student submissions across active drives</p></div><a href="applications.html">Review queue →</a></div><div class="table-wrap"><table class="data-table"><thead><tr><th>STUDENT</th><th>COMPANY / ROLE</th><th>APPLIED</th><th>STATUS</th></tr></thead><tbody><tr><td><span class="table-primary">Aanya Sharma</span><span class="table-secondary">CS2026-041</span></td><td>Vertex Analytics<span class="table-secondary">Data Analyst Associate</span></td><td>Today</td><td><span class="status-badge warning">Technical interview</span></td></tr><tr><td><span class="table-primary">Rohan Mehta</span><span class="table-secondary">IT2026-018</span></td><td>Northstar Systems<span class="table-secondary">Graduate Engineer</span></td><td>Today</td><td><span class="status-badge info">Shortlisted</span></td></tr><tr><td><span class="table-primary">Diya Menon</span><span class="table-secondary">ECE2026-107</span></td><td>Meridian Bank<span class="table-secondary">Technology Associate</span></td><td>Sep 28</td><td><span class="status-badge neutral">Applied</span></td></tr></tbody></table></div></section>
+					<section class="panel"><div class="panel-header"><h2>Upcoming drives</h2><a href="drives.html">All drives →</a></div><div class="panel-body data-list"><div class="data-list-row"><div><span class="table-primary">Northstar Systems</span><span class="table-secondary">Graduate Software Engineer</span></div><span class="status-badge info">Oct 24</span></div><div class="data-list-row"><div><span class="table-primary">Asteron Consulting</span><span class="table-secondary">Technology Consultant</span></div><span class="status-badge info">Nov 04</span></div><div class="data-list-row"><div><span class="table-primary">Vertex Analytics</span><span class="table-secondary">Data Analyst Associate</span></div><span class="status-badge warning">Oct 30</span></div></div></section>
+				</div>
+				<section class="panel section-block"><div class="panel-header"><h2>Recent results</h2><a href="results.html">Manage results →</a></div><div class="panel-body data-list"><div class="data-list-row"><div><span class="table-primary">Meridian Digital · Associate Engineer</span><span class="table-secondary">Final result updated · 12 students selected</span></div><span class="status-badge success">Published Sep 28</span></div><div class="data-list-row"><div><span class="table-primary">Cedar Labs · QA Engineering Intern</span><span class="table-secondary">Technical round completed · 18 students advanced</span></div><span class="status-badge info">Updated Sep 26</span></div></div></section>
+			</main>
+		</div></div>
+		<div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
+		<script src="../js/officer.js" defer></script>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Applications | Student Placement</title>
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/dashboard.css">
+		<link rel="stylesheet" href="../css/student.css">
+	</head>
+	<body class="portal-page" data-portal="student" data-page="applications">
+		<div class="portal-app" id="portal-app"><aside class="portal-sidebar" id="portal-sidebar" aria-label="Student navigation"></aside><div class="sidebar-overlay" data-sidebar-overlay></div><div class="portal-main"><header class="portal-topbar" id="portal-topbar"></header>
+			<main class="page-content">
+				<div class="demo-banner">Application statuses and dates below are illustrative. Status changes do not contact employers.</div>
+				<header class="page-heading"><div><h1>My applications</h1><p>Follow every opportunity from submission to final decision.</p></div><a class="action-button secondary" href="drives.html">Browse drives</a></header>
+				<section class="metrics-grid" aria-label="Application totals"><article class="metric-card"><p class="metric-label">Total applications</p><p class="metric-value">05</p><p class="metric-foot">This placement cycle</p></article><article class="metric-card"><p class="metric-label">In progress</p><p class="metric-value">03</p><p class="metric-foot">Awaiting next stage</p></article><article class="metric-card"><p class="metric-label">Interviews</p><p class="metric-value">02</p><p class="metric-foot">Upcoming and completed</p></article><article class="metric-card"><p class="metric-label">Offers</p><p class="metric-value">01</p><p class="metric-foot">One offer received</p></article></section>
+				<section class="panel section-block"><div class="panel-header"><div><h2>Application timeline</h2><p class="section-note">Current stage and next step for each application</p></div><select class="control-select" aria-label="Filter applications" data-application-filter><option value="">All statuses</option><option>Applied</option><option>Shortlisted</option><option>Online Test</option><option>Technical Interview</option><option>HR Interview</option><option>Selected</option><option>Rejected</option></select></div>
+					<div class="table-wrap"><table class="data-table"><thead><tr><th>COMPANY / ROLE</th><th>APPLIED</th><th>STATUS</th><th>NEXT STEP</th><th>PROGRESS</th></tr></thead><tbody data-application-list>
+						<tr data-application-row data-status="HR Interview"><td><span class="table-primary">Vertex Analytics</span><span class="table-secondary">Data Analyst Associate</span></td><td>Sep 12, 2026</td><td><span class="status-badge warning">HR Interview</span></td><td>Oct 02 · 10:30 AM</td><td><span class="status-badge info">5 of 6</span></td></tr>
+						<tr data-application-row data-status="Shortlisted"><td><span class="table-primary">Northstar Systems</span><span class="table-secondary">Graduate Software Engineer</span></td><td>Sep 16, 2026</td><td><span class="status-badge info">Shortlisted</span></td><td>Online test · Oct 06</td><td><span class="status-badge info">2 of 6</span></td></tr>
+						<tr data-application-row data-status="Technical Interview"><td><span class="table-primary">Asteron Consulting</span><span class="table-secondary">Technology Consultant</span></td><td>Sep 18, 2026</td><td><span class="status-badge warning">Technical Interview</span></td><td>Campus · Oct 08</td><td><span class="status-badge info">4 of 6</span></td></tr>
+						<tr data-application-row data-status="Selected"><td><span class="table-primary">Meridian Digital</span><span class="table-secondary">Associate Engineer</span></td><td>Aug 26, 2026</td><td><span class="status-badge success">Selected</span></td><td>Offer accepted</td><td><span class="status-badge success">6 of 6</span></td></tr>
+						<tr data-application-row data-status="Rejected"><td><span class="table-primary">Cedar Labs</span><span class="table-secondary">QA Engineering Intern</span></td><td>Aug 15, 2026</td><td><span class="status-badge neutral">Not selected</span></td><td>Application closed</td><td><span class="status-badge neutral">Closed</span></td></tr>
+					</tbody></table></div>
+				</section>
+				<section class="panel section-block"><div class="panel-header"><h2>Selection stages</h2></div><div class="panel-body table-wrap"><div class="application-progress"><div class="progress-step is-done">Applied</div><div class="progress-step is-done">Shortlisted</div><div class="progress-step is-done">Online test</div><div class="progress-step is-done">Technical</div><div class="progress-step is-current">HR interview</div><div class="progress-step">Decision</div></div></div></section>
+			</main>
+		</div></div>
+		<div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+		<script src="../js/student.js" defer></script>
+		<script src="../js/applications.js" defer></script>
+	</body>
+</html>

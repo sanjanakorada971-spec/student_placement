@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Settings | Student Placement</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/student.css">
+  </head>
+  <body class="portal-page" data-portal="student" data-page="settings">
+    <div class="portal-app" id="portal-app"><aside class="portal-sidebar" id="portal-sidebar" aria-label="Student navigation"></aside><div class="sidebar-overlay" data-sidebar-overlay></div><div class="portal-main"><header class="portal-topbar" id="portal-topbar"></header>
+      <main class="page-content">
+        <header class="page-heading"><div><h1>Settings</h1><p>Manage your account and placement update preferences.</p></div></header>
+        <div class="content-grid equal">
+          <section class="panel"><div class="panel-header"><h2>Account settings</h2></div><div class="panel-body"><div class="detail-item"><span>Account email</span><strong>aanya.sharma@northfield.edu</strong></div><div class="detail-item"><span>Portal role</span><strong>Student</strong></div><a class="action-button secondary section-block" href="profile.html">Review profile</a></div></section>
+          <section class="panel"><div class="panel-header"><h2>Password</h2></div><div class="panel-body"><p class="section-note">Password management is not connected in this frontend demo.</p><button class="action-button secondary section-block" type="button" data-demo-action="Password reset">Request password reset</button></div></section>
+        </div>
+        <form class="panel section-block" data-settings-form><div class="panel-header"><div><h2>Notification preferences</h2><p class="section-note">Choose which placement updates you want to see.</p></div></div><div class="panel-body">
+          <label class="setting-row"><span><strong>Drive announcements</strong><small>New opportunities that match your academic profile</small></span><input type="checkbox" name="driveAnnouncements" checked></label>
+          <label class="setting-row"><span><strong>Application updates</strong><small>Shortlists, assessments, interviews, and results</small></span><input type="checkbox" name="applicationUpdates" checked></label>
+          <label class="setting-row"><span><strong>Deadline reminders</strong><small>Reminders before an application or assessment closes</small></span><input type="checkbox" name="deadlineReminders" checked></label>
+          <label class="setting-row"><span><strong>Profile activity</strong><small>When your profile is reviewed by a placement officer</small></span><input type="checkbox" name="profileActivity"></label>
+          <div class="button-row section-block"><button class="action-button" type="submit">Save preferences</button></div>
+        </div></form>
+        <section class="panel section-block"><div class="panel-header"><h2>Privacy and demo data</h2></div><div class="panel-body"><p class="section-note">This frontend preview stores selected preferences and profile data in local browser storage only. No information is sent to a server.</p><button class="action-button danger section-block" type="button" data-clear-demo>Clear demo data</button></div></section>
+      </main>
+    </div></div>
+    <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+    <script src="../js/student.js" defer></script>
+  </body>
+</html>

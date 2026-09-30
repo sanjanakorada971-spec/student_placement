@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Add Company | Student Placement</title><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/dashboard.css"><link rel="stylesheet" href="../css/officer.css"></head>
+  <body class="portal-page" data-portal="officer" data-page="companies">
+    <div class="portal-app" id="portal-app"><aside class="portal-sidebar" id="portal-sidebar" aria-label="Officer navigation"></aside><div class="sidebar-overlay" data-sidebar-overlay></div><div class="portal-main"><header class="portal-topbar" id="portal-topbar"></header>
+      <main class="page-content">
+        <nav class="section-note" aria-label="Breadcrumb"><a href="companies.html">Companies</a> / Add company</nav>
+        <header class="page-heading section-block"><div><h1>Add a company</h1><p>Create a hiring partner record for the placement cycle.</p></div><a class="action-button secondary" href="companies.html">Cancel</a></header>
+        <div class="demo-banner">This form creates a sample record in local browser storage only. It does not contact the company.</div>
+        <form class="panel section-block" data-company-form>
+          <div class="panel-header"><div><h2>Company information</h2><p class="section-note">Fields marked required must be completed.</p></div></div>
+          <div class="panel-body officer-form-grid">
+            <div class="portal-field"><label for="company-name">Company name *</label><input id="company-name" name="name" required placeholder="e.g. Northstar Systems"></div>
+            <div class="portal-field"><label for="company-industry">Industry *</label><select id="company-industry" name="industry" required><option value="">Select industry</option><option>Technology</option><option>Analytics</option><option>Consulting</option><option>Financial services</option><option>Manufacturing</option><option>Healthcare</option><option>Other</option></select></div>
+            <div class="portal-field"><label for="company-website">Website</label><input id="company-website" name="website" type="url" placeholder="https://company.example"></div>
+            <div class="portal-field"><label for="company-location">Location *</label><input id="company-location" name="location" required placeholder="City, country"></div>
+            <div class="portal-field field-wide"><label for="company-description">Company description</label><textarea class="control-textarea" id="company-description" name="description" placeholder="A short overview of the organization and its work"></textarea></div>
+            <div class="portal-field"><label for="contact-person">Contact person *</label><input id="contact-person" name="contactPerson" required placeholder="Full name"></div>
+            <div class="portal-field"><label for="contact-email">Contact email *</label><input id="contact-email" name="email" type="email" required placeholder="recruiter@company.example"></div>
+            <div class="portal-field"><label for="contact-phone">Contact phone</label><input id="contact-phone" name="phone" type="tel" placeholder="+91 98765 43210"></div>
+          </div>
+          <div class="panel-body button-row"><button class="action-button" type="submit">Save company</button><a class="action-button secondary" href="companies.html">Cancel</a></div>
+        </form>
+      </main>
+    </div></div>
+    <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div><script src="../js/officer.js" defer></script>
+  </body>
+</html>

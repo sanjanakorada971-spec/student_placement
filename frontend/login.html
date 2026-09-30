@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in | Student Placement</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+  </head>
+  <body class="auth-page">
+    <header class="auth-header">
+      <nav class="navigation page-width" aria-label="Main navigation">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">SP</span><span>Student <strong>Placement</strong></span></a>
+        <a class="auth-home-link" href="index.html">Back to home</a>
+      </nav>
+    </header>
+    <main class="auth-layout">
+      <aside class="auth-aside">
+        <div class="auth-aside-content">
+          <p class="eyebrow">YOUR PLACEMENT WORKSPACE</p>
+          <h1>Every next step, in view.</h1>
+          <p>Keep opportunities, applications, and outcomes together through every stage of the placement season.</p>
+        </div>
+        <div class="auth-aside-foot"><div><strong>50+</strong><span>demo companies</span></div><div><strong>150+</strong><span>sample drives</span></div></div>
+      </aside>
+      <section class="auth-card" aria-labelledby="login-title">
+        <p class="eyebrow section-eyebrow">WELCOME BACK</p>
+        <h2 id="login-title">Sign in</h2>
+        <p class="auth-intro">Use the demo portal to preview the student or officer experience.</p>
+        <p class="auth-message" id="login-message" role="status" aria-live="polite"></p>
+        <form id="login-form" novalidate>
+          <div class="form-field">
+            <label for="login-role">I am signing in as</label>
+            <select id="login-role" name="role" required>
+              <option value="student">Student</option>
+              <option value="officer">Placement Officer</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="login-email">Email address</label>
+            <input id="login-email" name="email" type="email" placeholder="you@university.edu" autocomplete="username" required>
+          </div>
+          <div class="form-field">
+            <label for="login-password">Password</label>
+            <div class="password-control">
+              <input id="login-password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" minlength="6" required>
+              <button class="password-toggle" type="button" data-password-toggle="login-password" aria-label="Show password">Show</button>
+            </div>
+          </div>
+          <div class="form-row">
+            <label class="check-label"><input type="checkbox" name="remember"> Remember me</label>
+            <button class="text-button" id="forgot-password" type="button">Forgot password?</button>
+          </div>
+          <button class="button button-primary auth-submit" type="submit">Continue to portal <span aria-hidden="true">→</span></button>
+          <p class="auth-switch">New to the placement portal? <a class="inline-link" href="register.html">Create an account</a></p>
+          <p class="auth-demo-note">Demo only: no credentials are verified. Choose a role to open its sample dashboard.</p>
+        </form>
+      </section>
+    </main>
+    <p class="auth-footer">© 2026 Student Placement Management System · Frontend preview</p>
+    <script src="js/auth.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Officer Settings | Student Placement</title><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/dashboard.css"><link rel="stylesheet" href="../css/officer.css"></head>
+  <body class="portal-page" data-portal="officer" data-page="settings">
+    <div class="portal-app" id="portal-app"><aside class="portal-sidebar" id="portal-sidebar" aria-label="Officer navigation"></aside><div class="sidebar-overlay" data-sidebar-overlay></div><div class="portal-main"><header class="portal-topbar" id="portal-topbar"></header>
+      <main class="page-content">
+        <div class="demo-banner">Officer account and system preference changes are stored locally in this browser preview only.</div>
+        <header class="page-heading"><div><h1>Settings</h1><p>Manage your officer profile, alerts, and workspace preferences.</p></div></header>
+        <div class="content-grid equal">
+          <form class="panel" data-officer-profile><div class="panel-header"><h2>Profile settings</h2></div><div class="panel-body"><div class="portal-field"><label for="officer-name">Full name</label><input id="officer-name" name="name" value="Mira Kapoor" required></div><div class="portal-field"><label for="officer-email">Work email</label><input id="officer-email" name="email" type="email" value="mira.kapoor@northfield.edu" required></div><div class="portal-field"><label for="officer-role">Role</label><input id="officer-role" name="role" value="Placement Officer" readonly></div><button class="action-button section-block" type="submit">Save profile</button></div></form>
+          <section class="panel"><div class="panel-header"><h2>Password</h2></div><div class="panel-body"><p class="section-note">Account security controls are not connected in this frontend demo.</p><button class="action-button secondary section-block" type="button" data-demo-action="Password reset">Request password reset</button></div></section>
+        </div>
+        <form class="panel section-block" data-officer-settings><div class="panel-header"><div><h2>Notification settings</h2><p class="section-note">Choose the updates you receive in this workspace.</p></div></div><div class="panel-body">
+          <label class="setting-row"><span><strong>New student applications</strong><small>Notify when a student submits an application</small></span><input type="checkbox" name="newApplications" checked></label>
+          <label class="setting-row"><span><strong>Upcoming drive deadlines</strong><small>Reminder before a drive closes or begins</small></span><input type="checkbox" name="driveReminders" checked></label>
+          <label class="setting-row"><span><strong>Result updates</strong><small>Alert when a result record is ready to publish</small></span><input type="checkbox" name="resultUpdates"></label>
+          <div class="button-row section-block"><button class="action-button" type="submit">Save notification settings</button></div>
+        </div></form>
+        <form class="panel section-block" data-system-settings><div class="panel-header"><h2>System preferences</h2></div><div class="panel-body officer-form-grid"><div class="portal-field"><label for="academic-year">Academic year</label><select id="academic-year" name="academicYear"><option>2026 / 27</option><option>2025 / 26</option></select></div><div class="portal-field"><label for="default-department">Default department filter</label><select id="default-department" name="department"><option>All departments</option><option>Computer Science</option><option>Information Technology</option><option>Electronics & Communication</option></select></div><div class="field-wide"><label class="setting-row"><span><strong>Show demo data labels</strong><small>Keep sample-data notes visible throughout the portal</small></span><input type="checkbox" name="showDemoLabels" checked></label></div><div class="field-wide button-row"><button class="action-button" type="submit">Save system preferences</button></div></div></form>
+      </main>
+    </div></div>
+    <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div><script src="../js/officer.js" defer></script>
+  </body>
+</html>
